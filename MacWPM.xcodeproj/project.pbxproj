@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F00FAEBA2BFA95D2002A7B77 /* MacWPMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00FAEB92BFA95D2002A7B77 /* MacWPMApp.swift */; };
-		F00FAEBC2BFA95D2002A7B77 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00FAEBB2BFA95D2002A7B77 /* ContentView.swift */; };
 		F00FAEBE2BFA95D4002A7B77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F00FAEBD2BFA95D4002A7B77 /* Assets.xcassets */; };
 		F00FAEC12BFA95D4002A7B77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F00FAEC02BFA95D4002A7B77 /* Preview Assets.xcassets */; };
+		F00FAEC92BFA9639002A7B77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00FAEC82BFA9639002A7B77 /* AppDelegate.swift */; };
+		F047B3CD2BFA9B7200C273CF /* MacWPMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F047B3CC2BFA9B7200C273CF /* MacWPMApp.swift */; };
+		F047B3D12BFAB4CE00C273CF /* AuthorizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F047B3D02BFAB4CE00C273CF /* AuthorizeView.swift */; };
+		F047B3D42BFAB83E00C273CF /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = F047B3D32BFAB83E00C273CF /* Sparkle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F00FAEB62BFA95D2002A7B77 /* MacWPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacWPM.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F00FAEB92BFA95D2002A7B77 /* MacWPMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacWPMApp.swift; sourceTree = "<group>"; };
-		F00FAEBB2BFA95D2002A7B77 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F00FAEBD2BFA95D4002A7B77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F00FAEC02BFA95D4002A7B77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F00FAEC22BFA95D4002A7B77 /* MacWPM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacWPM.entitlements; sourceTree = "<group>"; };
+		F00FAEC82BFA9639002A7B77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F047B3CC2BFA9B7200C273CF /* MacWPMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacWPMApp.swift; sourceTree = "<group>"; };
+		F047B3D02BFAB4CE00C273CF /* AuthorizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizeView.swift; sourceTree = "<group>"; };
+		F047B3D52BFABA1800C273CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F047B3D42BFAB83E00C273CF /* Sparkle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,10 +57,12 @@
 		F00FAEB82BFA95D2002A7B77 /* MacWPM */ = {
 			isa = PBXGroup;
 			children = (
-				F00FAEB92BFA95D2002A7B77 /* MacWPMApp.swift */,
-				F00FAEBB2BFA95D2002A7B77 /* ContentView.swift */,
+				F047B3CC2BFA9B7200C273CF /* MacWPMApp.swift */,
+				F00FAEC82BFA9639002A7B77 /* AppDelegate.swift */,
+				F047B3D02BFAB4CE00C273CF /* AuthorizeView.swift */,
 				F00FAEBD2BFA95D4002A7B77 /* Assets.xcassets */,
 				F00FAEC22BFA95D4002A7B77 /* MacWPM.entitlements */,
+				F047B3D52BFABA1800C273CF /* Info.plist */,
 				F00FAEBF2BFA95D4002A7B77 /* Preview Content */,
 			);
 			path = MacWPM;
@@ -85,6 +92,9 @@
 			dependencies = (
 			);
 			name = MacWPM;
+			packageProductDependencies = (
+				F047B3D32BFAB83E00C273CF /* Sparkle */,
+			);
 			productName = MacWPM;
 			productReference = F00FAEB62BFA95D2002A7B77 /* MacWPM.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +123,9 @@
 				Base,
 			);
 			mainGroup = F00FAEAD2BFA95D2002A7B77;
+			packageReferences = (
+				F047B3D22BFAB83E00C273CF /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
 			productRefGroup = F00FAEB72BFA95D2002A7B77 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F00FAEBC2BFA95D2002A7B77 /* ContentView.swift in Sources */,
-				F00FAEBA2BFA95D2002A7B77 /* MacWPMApp.swift in Sources */,
+				F00FAEC92BFA9639002A7B77 /* AppDelegate.swift in Sources */,
+				F047B3D12BFAB4CE00C273CF /* AuthorizeView.swift in Sources */,
+				F047B3CD2BFA9B7200C273CF /* MacWPMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,12 +287,14 @@
 				CODE_SIGN_ENTITLEMENTS = MacWPM/MacWPM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"MacWPM/Preview Content\"";
 				DEVELOPMENT_TEAM = LF3VQ6Z37G;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MacWPM/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,12 +316,14 @@
 				CODE_SIGN_ENTITLEMENTS = MacWPM/MacWPM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"MacWPM/Preview Content\"";
 				DEVELOPMENT_TEAM = LF3VQ6Z37G;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MacWPM/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -341,6 +359,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F047B3D22BFAB83E00C273CF /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F047B3D32BFAB83E00C273CF /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F047B3D22BFAB83E00C273CF /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F00FAEAE2BFA95D2002A7B77 /* Project object */;
 }
