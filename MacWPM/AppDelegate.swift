@@ -69,10 +69,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         // Extras menu item's
         menu.addItem(.separator())
-        menu.addItem(withTitle: "Check for updates...",
-                     action: #selector(SPUStandardUpdaterController.checkForUpdates(_:)),
-                     keyEquivalent: "")
+        
+        // Check for Updates menu item
+        let checkForUpdatesMenuItem = NSMenuItem()
+        checkForUpdatesMenuItem.title = "Check for Updates…"
+        checkForUpdatesMenuItem.target = updaterController
+        checkForUpdatesMenuItem.action = #selector(SPUStandardUpdaterController.checkForUpdates(_:))
+        menu.addItem(checkForUpdatesMenuItem)
+
         menu.addItem(.separator())
+
         menu.addItem(withTitle: "Quit",
                      action: #selector(quit),
                      keyEquivalent: "q")
