@@ -53,17 +53,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let endImage = NSImage(systemSymbolName: "stop.fill", accessibilityDescription: "End")
         
         // Add the "Start Session" menu item
-        let startMenuItem = NSMenuItem(title: "Start Session", action: #selector(startSession), keyEquivalent: "")
+        let startMenuItem = NSMenuItem(title: "Start Session", action: #selector(startSession), keyEquivalent: "s")
+        startMenuItem.keyEquivalentModifierMask = [.command, .shift]
         startMenuItem.image = startImage
         menu.addItem(startMenuItem)
         
         // Add the "Reset Session" menu item
-        let resetMenuItem = NSMenuItem(title: "Reset Session", action: #selector(resetSession), keyEquivalent: "")
+        let resetMenuItem = NSMenuItem(title: "Reset Session", action: #selector(resetSession), keyEquivalent: "r")
+        resetMenuItem.keyEquivalentModifierMask = [.command, .shift]
         resetMenuItem.image = resetImage
         menu.addItem(resetMenuItem)
         
         // Add the "End Session" menu item
-        let endMenuItem = NSMenuItem(title: "End Session", action: #selector(endSession), keyEquivalent: "")
+        let endMenuItem = NSMenuItem(title: "End Session", action: #selector(endSession), keyEquivalent: "q")
+        endMenuItem.keyEquivalentModifierMask = [.command, .shift]
         endMenuItem.image = endImage
         menu.addItem(endMenuItem)
         
@@ -76,9 +79,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         checkForUpdatesMenuItem.target = updaterController
         checkForUpdatesMenuItem.action = #selector(SPUStandardUpdaterController.checkForUpdates(_:))
         menu.addItem(checkForUpdatesMenuItem)
-
+        
         menu.addItem(.separator())
-
+        
         menu.addItem(withTitle: "Quit",
                      action: #selector(quit),
                      keyEquivalent: "q")

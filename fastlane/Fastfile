@@ -38,6 +38,10 @@ platform :macos do
       verbose: true # Useful for showing notarization logs if it fails
     )
 
+    dmg(
+      path: "/MacWPM.app",
+    )
+
   end
 
   after_all do |lane|
