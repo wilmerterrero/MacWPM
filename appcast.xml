@@ -3,6 +3,14 @@
     <channel>
         <title>MacWPM</title>
         <item>
+            <title>1.0.3</title>
+            <pubDate>Mon, 20 May 2024 13:10:35 -0400</pubDate>
+            <sparkle:version>10</sparkle:version>
+            <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
+            <enclosure url="https://raw.githubusercontent.com/wilmerterrero/MacWPM/main/MacWPM.app.dmg" length="1694269" type="application/octet-stream" sparkle:edSignature="rmHZKPc9KXuv8xK4/1154uaK6ZoZOXo0VM6cQ3KbPaAJpfwcK+frYpRf7Kt+Iilq+qVrdLATz8hzTn7+LzulBg=="/>
+        </item>
+        <item>
             <title>1.0.2</title>
             <pubDate>Sun, 19 May 2024 19:40:00 -0400</pubDate>
             <sparkle:version>9</sparkle:version>
@@ -17,14 +25,6 @@
             <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
             <enclosure url="https://github.com/wilmerterrero/MacWPM/blob/main/MacWPM.app.zip" length="1366722" type="application/octet-stream" sparkle:edSignature="F9sy3k2AXUr9xViQRliEGfk/f4EuU6bEeVhVeFwo2JyK5bhn58916EJsAzOUFdNM+Sw6Dbq/ng24fiNjnM5ZCA=="/>
-        </item>
-        <item>
-            <title>1.0</title>
-            <pubDate>Sun, 19 May 2024 19:40:00 -0400</pubDate>
-            <sparkle:version>5</sparkle:version>
-            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="MacWPM.app.zip" length="1366688" type="application/octet-stream" sparkle:edSignature="IrfLl9y+3jnw7nzD2vOmMyPCqhsQl+0h/StthCQr2lpsWxqvYMJMBbElum9YrUBZjVvYkw/RAxpGEgER5lCsAA=="/>
         </item>
     </channel>
 </rss>

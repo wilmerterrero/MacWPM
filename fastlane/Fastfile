@@ -38,13 +38,10 @@ platform :macos do
       verbose: true # Useful for showing notarization logs if it fails
     )
 
-    dmg(
-      path: "/MacWPM.app",
-    )
-
   end
 
   after_all do |lane|
+    dmg(path: "./MacWPM.app")
     say "done"
     commit_version_bump(message: 'Version Bump via Fastlane', force: true)
 
