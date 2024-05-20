@@ -1,5 +1,7 @@
 # MacWPM
 
+![MacWPM](banner.png)
+
 MacWPM is a Mac OS menubar app that displays the current words per minute (WPM) of the user. It is designed to be used while typing to help users improve their typing speed.
 
 ## Distribution
