@@ -37,7 +37,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         if !accessEnabled {
             openNewWindow(view: AuthorizeView())
-            return
+            NSLog("WARNING - Accesibility not enabled")
         }
         
         // Set up status bar item
