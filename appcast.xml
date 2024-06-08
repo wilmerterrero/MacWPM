@@ -4,6 +4,14 @@
         <title>MacWPM</title>
         <item>
             <title>1.0.3</title>
+            <pubDate>Sat, 08 Jun 2024 16:37:38 -0400</pubDate>
+            <sparkle:version>13</sparkle:version>
+            <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.1</sparkle:minimumSystemVersion>
+            <enclosure url="https://raw.githubusercontent.com/wilmerterrero/MacWPM/main/MacWPM.app.dmg" length="1377709" type="application/octet-stream" sparkle:edSignature="4hzVllsKaoUULyy+wbQhvwfggpPJSxjPKfYsawh4MDd+XZrCAC5LkmSj7jYy6mQjWUi5dZjdZFEYBJj6Grb8CQ=="/>
+        </item>
+        <item>
+            <title>1.0.3</title>
             <pubDate>Mon, 20 May 2024 13:42:17 -0400</pubDate>
             <sparkle:version>12</sparkle:version>
             <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
